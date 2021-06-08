@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let's have fun with numbers.</title>
+        <script>
+            function isodd() {
+                alert(bignumber.value);
+                let val = bignumber.value;
+                if (val % 2 == 1) {
+                    output.innerHTML = "<h3>" + val + " is odd.</h3>";
+                } else {
+                    output.innerHTML = "<h3>" + val + " is even.</h3>";
+                }
+            }
+            function isdivisibleby3() {
+                alert(bignumber.value);
+                let val = bignumber.value;
+                if (val % 3 == 0) {
+                    output.innerHTML = "<h3>" + val + " is divisible by 3.</h3>";
+                } else {
+                    output.innerHTML = "<h3>" + val + " is not divisible by 3.</h3>";
+                }
+            }
+            function Autofill() 
+            {
+              let ran=Math.random()*9999 
+              let big=Math.round(ran)
+            bignumber.value=big
+            }
+            function isSquare(){
+let sq=bignumber.value
+let root=Math.sqrt(sq)
+if(Number.isInteger(root)){alert("The number is square")}else {alert("The number is not square")}
+            }
+        </script>
+    </head>
+
+    <body><h1 style="color:blue;" !</h1>Welcome to the game of numbers 
+        <p>Please enter a number.</p>
+        <input type="number" id="bignumber" /><button onclick="Autofill()"> Random numbers</button><p><button onclick="isodd()">Is the number odd?</button>
+        </p>
+  <button onclick="isdivisibleby3()">Is this number divisible by 3?</button>
+    <button onclick="isSquare()">Is the number a perfect square?</button>
+    <p id="output"></p>
+</body>

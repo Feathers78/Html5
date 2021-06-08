@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Your Html Website</title>
+<title>Random Html Websites</title>
+<script>
+  function checkName()
+  {
+    if(username.value.length >10){alert("Your name is too long")}
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+   function checkAge() {
+               if (age.value<6) alert
+               ("You are too young")
+               else if( age.value >100){alert ("You are too old")} 
+             }
+   function checkPassword(){
+               if (password.value.length <8 )
+              alert ("Your password should have at least 8 chacters.");
+              else if (password.value.length >20)
+alert ("Your password seems to be very long, are you sure you want it?")
+// password must be 8 to 20 chacters long
+//password must have both lower and uppercase letters
+let ps=password.value
+              let isalllowercase= ps==ps.toLowerCase()
+              let isallUpperCase= ps==ps.toUpperCase()
+              if(isalllowercase || isallUpperCase){alert ("Your password must have both upper and lower case letters.")}
+
+
+//password must have a number
+let hasNumber=false
+for (let index = 0; index <ps.length; index++){
+    if (ps[index]*0 == 0) hasNumber = true;
+}
+if(hasNumber==false){alert("Your password must have a number.")}
+             }
+  </script>
 </head>
 <body>
 
-<h1>Your Html Websites</h1>
-<p>You can write almost anything here.</p>
+<h1>Random Html Websites</h1>
+<p>You cannot write almost anything here.</p>
+  What is your name?<br>
+  <input id="username" type="text" onchange="checkName()">
+  <br>Make a new password.</br>
+<input id="password" type="password" onchange="checkPassword()">
 
+
+<br>What is your age?<br>
+<input id="age" onchange="checkAge()" type="number">
+ <br><button>Submit<br></button>
+<a href="GameOfNumbers.html">Let's have fun with numbers</a>
 </body>
 </html>
