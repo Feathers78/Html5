@@ -30,7 +30,24 @@
             function isSquare(){
 let sq=bignumber.value
 let root=Math.sqrt(sq)
-if(Number.isInteger(root)){alert("The number is square")}else {alert("The number is not square")}
+if (1*root==Math.round(1*root))
+alert("The number "+bignumber.value+" is a perfect square.")
+
+else alert("The number "+bignumber.value+" is not a perfect square.")
+            }
+            function isCube() {
+              let cb=bignumber.value
+              let root=Math.cbrt(cb)
+              if(Number.isInteger(root)){alert("Yes the number is cube")
+              } else{alert("No the number is not cube")}
+            }
+
+            function isInteger(num) {
+              if(1*num==Math.round(1*num)){return true}
+
+else{return false}
+            }
+            function isPositive(num) {if (num>=0){return true} else {return false}
             }
         </script>
     </head>
@@ -38,8 +55,11 @@ if(Number.isInteger(root)){alert("The number is square")}else {alert("The number
     <body><h1 style="color:blue;" !</h1>Welcome to the game of numbers 
         <p>Please enter a number.</p>
         <input type="number" id="bignumber" /><button onclick="Autofill()"> Random numbers</button><p><button onclick="isodd()">Is the number odd?</button>
-        </p>
   <button onclick="isdivisibleby3()">Is this number divisible by 3?</button>
     <button onclick="isSquare()">Is the number a perfect square?</button>
+      <button onclick="isInteger(bignumber.value)">Is this number a integer?</button>
     <p id="output"></p>
+    <P><button onclick="alert(isPositive(bignumber.value))">Is the number positive?
+            </button><button onclick="isCube()">Is the number a cube?</button>
+
 </body>
