@@ -7,13 +7,55 @@
                 cel = ((fahr - 32) * 5) / 9;
                 return cel;
             }
+                function CtoF(cel) {
+                fahr = (cel*9)/5+32 
+                return fahr;
+            }
             function convertF() {
                 F = Fahrenheit.value;
                 Celsius.value = FtoC(F);
+                Fahrenheit.value=CtoF(C).toFixed(1);
             }
+            function convertC() {
+                C = Celsius.value;
+                Fahrenheit.value = CtoF(C);Celsius.value=FtoC(F).toFixed(1);
+            }
+            function ItoC(inch) {
+              Cm=(inch*2.54)
+              return cm;
+            }
+            function convertI(){
+              I=Inch.value;
+              Cm=Centimeter.value
+             Centimeter.value = ItoCm(I).tofixed(2);
+            }
+            function CmtoI(cm){
+          In=(cm/2.54)
+          return inch
+        }
+        function convertCm(){
+          Cm=Centimeter.value
+          Inch.value=CmtoInch().toFixed(2);
+        }
+         function GtoL(gl){
+          liter=(gl*3.78541)
+          return liter
+        }
+        function converterGtoL(){
+         g=Gallon.value
+          g=Liter.value=GtoL(g).toFixed(2);
+        }
+        function LtoG(li){
+          gallon=(li/3.78541)
+          return gallon
+        }
+        function converterLtoG(){
+         l=Liter.value
+          l=Gallon.value=LtoG(l).toFixed(2);
+        }
         </script>
     </head>
-    <h1>These are some cool coverters to try out!</h1>
+    <h1>These are some cool coverters to try out! </h1>
     <table style="width: 100%;">
         <tr>
             <th>Fahrenheit</th>
@@ -21,8 +63,37 @@
         </tr>
         <tr>
             <td><input type="number" id="Fahrenheit" onchange="convertF()" /></td>
-            <td><input type="number" id="Celsius" /></td>
+            <td><input type="number" id="Celsius" onchange="convertC()"/></td>
         </tr>
+            <tr>
+            <td>Inch</td>
+            <td>Cm</td>
+            </tr>
+        <tr>
+            <td><input type="number" id="Inch" onchange="convertI()" />
+            </td>
+            <td><input type="number" id="Cm" onchange="convertCm()"/>
+            </td>
+            <tr>
+              <td>Gallon</td>
+              <td>Liter</td>
+            </tr>
+            </tr>
+            </script>
+            <p><a href="Intro.html">Click here for the intro! </a><br>
+<a href="GameOfNumbers.html">Let's have fun with numbers</a>
+<p><a href="Converter.html">Click here to see a number converter! </a><br>
+<p><a href="Statements.html">Click here to see some statments! </a><br>
+<p><a href="datatypes.html">Datatypes for fun(?)
+    <p><a href="Functions.html">Functions for math and other stuff.</a><br>
+    <p><a href="Objects.html">Objects and cars.</a><br>
+    <p><a href="Strings.html">String.</a><br>
+    <p><a href="Stringmethods.html">String method.</a><br>
+    </a><br>
+    
+            
+        
+        
     </table>
     <body></body>
 </html>

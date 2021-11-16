@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Carsssssssssss</h2>
+
+<p id="Car"></p>
+
+<script>
+  
+// Create an object:
+const car = {type:"Fiat", model:"500", color:"white"};
+
+// Display some data from the object:
+document.getElementById("Car").innerHTML = "The car type is " + car.type;
+</script>
+<p id="Rat"></p>
+<h2>John</h2>
+<script>
+  
+// Create an object:
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+// Display some data from the object:
+document.getElementById("Rat").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+<p>There are two different ways to access an object property.</p>
+
+<p>You can use person.property or person["property"].</p>
+
+<p id="Orange"></p>
+
+<script>
+// Create an object:
+const person2 = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566
+};
+
+// Display some data from the object:
+document.getElementById("Orange").innerHTML =
+person2.firstName + " " + person.lastName;
+</script>
+<p>An object method is a function definition, stored as a property value.</p>
+
+<p id="Pumpkin"></p>
+
+<script>
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+// Display data from the object:
+document.getElementById("Pumpkin").innerHTML = person.fullName();
+</script>
+<p><a href="Intro.html">Click here for the intro! </a><br>
+<a href="GameOfNumbers.html">Let's have fun with numbers</a>
+<p><a href="Converter.html">Click here to see a number converter! </a><br>
+<p><a href="Statements.html">Click here to see some statments! </a><br>
+<p><a href="Operators.html">Click here to see some operators!</a><br>
+<p><a href="datatypes.html">Datatypes for fun(?)
+    <p><a href="Functions.html">Functions for math and other stuff.</a><br>
+    <p><a href="Objects.html">Objects and cars.</a><br>
+    <p><a href="Strings.html">String.</a><br>
+    <p><a href="Stringmethods.html">String method.</a><br>
+<html><html></a><br>
+
+</body>
+</html>
